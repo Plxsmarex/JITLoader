@@ -1,7 +1,7 @@
 # JITLoader
 Using the .NET JIT compiler's RWX memory to execute shellcode without using APIs or syscalls.
 
-# How it Works
+# How it works
 .NET uses a just-in-time compiler to compile code in memory, the JIT compiler works in a RWX memory area, this means we can theoretically write and execute machinecode directly in the JIT's memory.
 
 Using this to execute shellcode will allow us to bypass API hooking and syscall detection methods, furthermore the JIT compiler's memory is likely ignored by some EDRs, so execution from unbacked memory won't be suspicious. The small amount of code required will also make static detection of JITLoader much easier to bypass.
