@@ -12,5 +12,3 @@ As powershell is also .NET, I have included a powershell version of the program 
 
 # Credits
 https://github.com/Mr-Un1k0d3r/DotnetNoVirtualProtectShellcodeLoader - The main idea.
-
-ChatGPT - Help with some of the code.
