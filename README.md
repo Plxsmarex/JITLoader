@@ -1,5 +1,5 @@
 # JITLoader
-Using the .NET JIT compiler's RWX memory to decrypt and execute shellcode without using APIs or syscalls.
+Using the `.NET` **JIT compiler's** `RWX` memory to decrypt and execute shellcode without using **APIs** or **syscalls**.
 
 # How it works
 `.NET` uses a **just-in-time** (JIT) compiler to convert `bytecode` to `binary` in memory, however to perform this, the compiler allocates memory with the read write execute (`RWX`) protection, this means we can write and execute our own code directly in the **JIT compiler's** memory.
